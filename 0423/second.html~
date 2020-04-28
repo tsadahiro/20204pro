@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title> test </title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+
+  <body>
+    <h1>
+    ４年プロジェクト初回
+    </h1>
+    <div id="app" @click="paste">
+      {{message}}
+    </div>
+    <script src="test.js"></script>
+  </body>
+
+</html>
