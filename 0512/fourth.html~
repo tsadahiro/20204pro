@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title> test </title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+
+  <body>
+    <h1>
+    ４年プロジェクト4回
+    </h1>
+    <div id="app">
+      
+      <table border>
+	<tr v-for="(row,i) in array">
+	  <td v-for="(x,j) in row" @click="change(i,j)">
+	    {{x? "&#x1f600;": "　" }} </td>
+	</tr>
+      </table>
+    </div>
+    <script src="fourth.js"></script>
+  </body>
+
+</html>

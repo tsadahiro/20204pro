@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title> test </title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+    <h1>4年プロジェクト5回</h1>
+    <div id="app">
+      <input type="button" value="shuffle"
+	     @click="shuffle()">
+      </input>
+      <svg width="400" height="400">
+	<rect v-for="(p,i) in pieces"
+	      :x="p.x*100" :y="p.y*100"
+	      width="100" height="100" fill="blue"
+	      :fill-opacity="i==0?  0 : 0.5"
+	      stroke="black"
+	      @click="slide(i)"
+	      >
+	</rect>
+	<text v-for="(p,i) in pieces"
+	      :x="p.x*100+30" :y="p.y*100+70"
+	      font-size="50"> {{i}}
+	</text>
+      </svg>
+    </div>
+    <script src="fifth.js"></script>
+  </body>
+</html>
