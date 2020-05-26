@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title> test </title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+    <h1>4年プロジェクト6回2</h1>
+    <div id="app">
+      <input type="button" value="shuffle"
+	     @click="shuffle()">
+      </input>
+      <svg width="400" height="400">
+	<piece v-for="(p,i) in pieces" :row="p.y" :col="p.x" :digit="i"></piece>
+      </svg>
+    </div>
+    <script src="sixth2.js"></script>
+  </body>
+</html>
