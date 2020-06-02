@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title> component test </title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="june">
+      <svg width="400" height="400">
+	<mybtn v-for="b in btns" :row="b.row" :column="b.column"></mybtn>
+      </svg>
+    </div>
+    <script src="0602.js"></script>
+  </body>
+</html>
+    

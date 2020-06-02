@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title> component test </title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="june">
+    </div>
+    <script src="0602.js"></script>
+  </body>
+</html>
+    

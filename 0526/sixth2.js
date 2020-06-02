@@ -1,18 +1,21 @@
 Vue.component('piece',{
     props: ['row','col','digit'],
     template: '<g @click="slide(digit)" :transform="transform"><rect width="100" height="100" :fill="fill" fill-opacity="0.5" stroke="black"></rect>'+
-	'<text x="30" y="70" font-size="50">{{digit}}</text></g>',
+	'<text x="30" y="70" font-size="50">{{character}}</text></g>',
     computed:{ //算出プロパティ
 	transform(){
 	    return 'translate(' + this.col*100 + ',' + this.row*100 + ')';
 	},
 	fill(){
 	    return this.digit==0? 'white':'blue';
+	},
+	character(){
+	    return this.digit==0? '':this.digit;
 	}
     },
     methods:{
 	slide(){
-	    console.log(this.digit);
+	    this.$emit('slide')
 	}
     }
 })

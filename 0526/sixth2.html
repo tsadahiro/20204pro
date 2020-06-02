@@ -10,7 +10,7 @@
 	     @click="shuffle()">
       </input>
       <svg width="400" height="400">
-	<piece v-for="(p,i) in pieces" :row="p.y" :col="p.x" :digit="i"></piece>
+	<piece v-for="(p,i) in pieces" :row="p.y" :col="p.x" :digit="i" @slide="slide(i)"></piece>
       </svg>
     </div>
     <script src="sixth2.js"></script>
